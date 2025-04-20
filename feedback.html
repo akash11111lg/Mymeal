@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback - MyMeal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>MyMeal</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="book.html">Book Table</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+  <main class="feedback">
+    <h2>We value your feedback</h2>
+    <form onsubmit="event.preventDefault(); alert('Thank you for your feedback!'); window.location.href='thankyou.html';">
+      <textarea placeholder="Share your experience..." required></textarea>
+      <br />
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </main>
+  <footer>&copy; 2025 MyMeal</footer>
+</body>
+</html>
